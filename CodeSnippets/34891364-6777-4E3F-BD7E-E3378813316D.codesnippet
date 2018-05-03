@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zb_default_setting</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#define XF_SCREEN_BOUNDS [UIScreen mainScreen].bounds
+#define XF_SCREEN_HEIGHT XF_SCREEN_BOUNDS.size.height
+#define XF_SCREEN_WIDTH XF_SCREEN_BOUNDS.size.width
+#define XF_COLOR(R,G,B,A)[UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+#define XF_GLOBAL_COLOR XF_COLOR(242,242,242,1.0)
+#define XF_WEAK_SELF __weak typeof(self) weakSelf = self;
+#define XFNoteCenter [NSNotificationCenter defaultCenter]
+#define XFUserDefaults [NSUserDefaults standardUserDefaults]</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>34891364-6777-4E3F-BD7E-E3378813316D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Lonely Prefix Default Setting</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

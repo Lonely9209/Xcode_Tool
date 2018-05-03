@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>XDebug Log</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#ifdef DEBUG
+//#define NSLog(format, ...) printf("[%s] %s\n", __TIME__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
+#define XFLog(...) NSLog(__VA_ARGS__)
+#define XF_SHOW_METHOD_INFO XFLog(@"func:%s-----LINE:%d", __func__,__LINE__);
+#else
+
+//#define NSLog(format, ...)
+#define XFLog(...)
+#define XF_SHOW_METHOD_INFO XFLog(@"func:%s-----LINE:%d", __func__,__LINE__);
+#endif
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3A708E65-2969-4D7F-B2F1-AE3B1B672AB8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Lonely Debug Log</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
